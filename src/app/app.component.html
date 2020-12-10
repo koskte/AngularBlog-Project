@@ -1,0 +1,7 @@
+<div>
+  <app-add-post-button (event)="incomingPosts($event)" *ngIf="visible"></app-add-post-button>
+  <app-blog-card [incomingPosts]="posts" *ngIf="visible"></app-blog-card>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

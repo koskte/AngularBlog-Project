@@ -1,0 +1,16 @@
+<mat-card *ngFor="let post of post" class="postContainer">
+  <mat-card-actions>
+    <mat-card-header class="header">
+      <mat-card-title class="title">
+        {{post.title}} 
+        <mat-card-subtitle class="date">
+          {{post.date}}
+        </mat-card-subtitle>
+      </mat-card-title>
+    </mat-card-header>
+  </mat-card-actions>
+  <mat-card-content class="content">
+    {{post.text}}
+  </mat-card-content>
+  </mat-card>
+  <button mat-raised-button color="primary" routerLink="">Takaisin</button>

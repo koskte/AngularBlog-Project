@@ -1,0 +1,19 @@
+<mat-expansion-panel class="panel">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Klikkaa minua lisätäksesi blogipostauksen!
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-panel-description class="date">{{this.date}}</mat-panel-description>
+  <div class="inputForm">
+    <mat-form-field>
+      <input matInput placeholder="Otsikko"  [(ngModel)]="title">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput placeholder="Tekstialue" class="textarea" [(ngModel)]="text"></textarea>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" (click)="submit()">Lähetä</button>
+
+</mat-expansion-panel>

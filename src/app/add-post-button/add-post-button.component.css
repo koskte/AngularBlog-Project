@@ -1,0 +1,11 @@
+.panel {
+  max-width: 530px;
+  margin: auto auto;
+}
+.textarea {
+  height: 100px;
+}
+.inputForm {
+  display: flex;
+  flex-direction: column;
+}
